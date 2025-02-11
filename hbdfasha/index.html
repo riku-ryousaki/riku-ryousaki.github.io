@@ -35,80 +35,80 @@
       // Jika menggunakan 1 gambar, isi pada cover1 saja
       // Atau isi semuanya jika ingin menggunakan 4 gambar
       // Note: hanya bisa menggunakan 1 gambar atau 4 sekaligus
-      cover1 = "nb1";
-      cover2 = "nb2";
-      cover3 = "nb3";
-      cover4 = "nb4";
+      cover1 = "nb1.webp";
+      cover2 = "nb2.webp";
+      cover3 = "nb3.webp";
+      cover4 = "nb4.webp";
 
       // Jika ingin menambahkan ucapan ikuti seperti contoh
       konten = [
         {
-          gambar: "img3",
-          ucapan: "hello squinny!!!",
+          gambar: "img3.gif",
+          ucapan: "Hello squinny!!!",
         },
         {
-          gambar: "img4",
-          ucapan: "i hope i'm not repeating my mistakes last month XD",
+          gambar: "img4.gif",
+          ucapan: "I hope i'm not repeating my mistakes last month XD",
         },
         {
-          gambar: "img4",
-          ucapan: "i'm really bad at expressing myself",
+          gambar: "img9.gif",
+          ucapan: "I'm really bad at expressing myself",
         },
         {
-          gambar: "img10",
-          ucapan: "different than you!!!",
+          gambar: "img10.gif",
+          ucapan: "Different than you!!!",
         },
         {
-          gambar: "img2",
-          ucapan: "you're always can be yourself !!!",
+          gambar: "img2.gif",
+          ucapan: "You're always can be yourself !!!",
         },
         {
-          gambar: "img8",
-          ucapan: "you're kind and care to others ",
+          gambar: "img8.gif",
+          ucapan: "You're so kind and care to others ",
         },
          {
-          gambar: "img12",
-          ucapan: "sometimes you're also holding all of that emotions by yourself",
+          gambar: "img12.gif",
+          ucapan: "Sometimes you're also holding all of that emotions by yourself",
         },
         {
-          gambar: "img15",
-          ucapan: "i didnt said that you have to tell everything's to me,but",
+          gambar: "img15.gif",
+          ucapan: "I didnt said that you have to tell everything's to me,but",
         },
         {
-          gambar: "img16",
-          ucapan: "i always ready for listening!!!",
+          gambar: "img16.gif",
+          ucapan: "I'm always ready for listening!!!",
         },
         {
-          gambar: "img5",
-          ucapan: "i hope you didnt hesitate and can more express yourself freely as usual ;D",
+          gambar: "img5.gif",
+          ucapan: "I hope you didnt hesitate and can more express yourself freely as usual ;D",
         },
         {
-          gambar: "img6",
-          ucapan: "its been 5 month too since i meet you right?!",
+          gambar: "img6.gif",
+          ucapan: "It's been 5 month too since i meet you right?!",
         },
         {
-          gambar: "img7",
-          ucapan: "you know that ages is just a number and you're not just a person!",
+          gambar: "img7.gif",
+          ucapan: "You know that ages is just a number and you're not just a person!",
         },
         {
-          gambar: "img13",
-          ucapan: "and as one get older,three things can happen",
+          gambar: "img13.gif",
+          ucapan: "As one get older,three things can happen",
         },
         {
-          gambar: "img11",
-          ucapan: "one, your memories goes",
+          gambar: "img11.gif",
+          ucapan: "One, your memories goes",
         },
         {
-          gambar: "img14",
-          ucapan: "and  i can't remember the others two XD",
+          gambar: "img14.gif",
+          ucapan: "And  i can't remember the others two XD",
         },
         {
-          gambar: "img1",
+          gambar: "img1.gif",
           ucapan: "I wish your birthday be a good start to the year!!!!",
         },
         {
-          gambar: "img17",
-          ucapan: "happy 17th birthday Squinny! ~Duckguin",
+          gambar: "img17.gif",
+          ucapan: "Happy 17th birthday Squinny! ~Duckguin",
         },
       ];
 
@@ -118,7 +118,7 @@
       var swalo = Swal.mixin({ allowOutsideClick: false, reverseButtons: true });
       async function kirimPesan() {
         klikA.play();
-        var { value: pesan } = await swalo.fire({ title: "Tulis pesan", input: "textarea", confirmButtonText: "Kirim" });
+        var { value: pesan } = await swalo.fire({ title: "Send a Message", input: "textarea", confirmButtonText: "Send" });
         klikA.play();
         if (pesan) {
           await swalo.fire({ title: "Kirim pesannya ke wa aku ya" });
