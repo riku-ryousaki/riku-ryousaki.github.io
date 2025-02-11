@@ -117,16 +117,8 @@
 
       var swalo = Swal.mixin({ allowOutsideClick: false, reverseButtons: true });
       async function kirimPesan() {
-        klikA.play();
-        var { value: pesan } = await swalo.fire({ title: "Send a Message", input: "textarea", confirmButtonText: "Send" });
-        klikA.play();
-        if (pesan) {
-          await swalo.fire({ title: "Kirim pesannya ke wa aku ya" });
-          location.assign(`https://wa.me/${nomorWhatsapp}?text=${pesan}`);
-        } else {
-          await swalo.fire({ title: "Jangan dikosongin ya :)" });
-          kirimPesan();
-        }
+        location.assign("https://www.instagram.com/ryousaki.aki?igsh=cGd3Y21mczNuYTNy")
+      }
       }
 
       isKlikAudio = 1;
