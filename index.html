@@ -57,18 +57,18 @@
       ];
 
       // [OPSIONAL] Diawali 62
-      nomorWhatsapp = "";
+      nomorWhatsapp = "6283120344291";
 
       var swalo = Swal.mixin({ allowOutsideClick: false, reverseButtons: true });
       async function kirimPesan() {
         klikA.play();
-        var { value: pesan } = await swalo.fire({ title: "Tulis pesan", input: "textarea", confirmButtonText: "Kirim" });
+        var { value: pesan } = await swalo.fire({ title: "Send Message", input: "textarea", confirmButtonText: "Send" });
         klikA.play();
         if (pesan) {
-          await swalo.fire({ title: "Kirim pesannya ke wa aku ya" });
-          location.assign(`https://wa.me/${nomorWhatsapp}?text=${pesan}`);
+          await swalo.fire({ title: "Send it to me kay?" });
+          location.assign(https://wa.me/${nomorWhatsapp}?text=${pesan});
         } else {
-          await swalo.fire({ title: "Jangan dikosongin ya :)" });
+          await swalo.fire({ title: "Don't let it empty :)" });
           kirimPesan();
         }
       }
